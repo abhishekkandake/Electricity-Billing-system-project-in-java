@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-message {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .bulb-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .bulb {
+            position: relative;
+            width: 100px;
+            height: 200px;
+        }
+
+        .bulb:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: #f8d53f;
+            border-radius: 50%;
+        }
+
+        .bulb .filament {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 80px;
+            background-color: #f8d53f;
+            display: none; /* Initially hidden */
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .back-to-home {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-home:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+	 
+    <header>
+        Electricity Bill Payment Successful
+    </header>
+
+    <div class="container">
+        <div class="success-message">
+            Thank you for your payment!
+        </div>
+
+        <p>Your electricity bill payment was successful. A confirmation email has been sent to your registered email address.</p>
+
+        <div class="button-container">
+            <a href="customerhome.html" class="back-to-home">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

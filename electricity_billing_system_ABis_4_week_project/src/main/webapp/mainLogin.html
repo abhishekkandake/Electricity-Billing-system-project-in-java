@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login By Admin</title>
+<style>
+	h1{
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: Arial;
+		margin:0px;
+		padding: 0px;
+	}
+	
+	.d1{
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height:800px;
+		
+		background-image: url("https://static.politico.com/dims4/default/55a1666/2147483647/resize/1110/quality/100/?url=https://static.politico.com/52/e2/03fb85eb4236a179c3e56b808ecf/ew-1117-anchondo-carboncapture-1160-01.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.d2{
+		margin:0px;
+		padding:0px;
+		width:100%;
+		height:600px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;;
+	}
+	.d3{
+		width:400px;
+		height:250px;
+		color: white;
+		border-radius: 4px;
+		text-align: center;
+	}
+	.d3 h3{
+		margin:0px;
+		padding:0px;
+		font-weight: bold;
+		font-family: Arial;
+		font-size: 30px;;
+		color: inherit;
+	}
+	.d3 .i1{
+		margin-top: 30px;;
+		width: 300px;
+		height:25px;
+		font-weight: bold;
+		font-family: Arial;
+		text-align: center;
+		font-family: Arial;
+		background-color:inherit;
+		border:2px solid black;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		color: black;
+	}
+	.d3 .i2{
+		height:25px;
+		text-align: center;
+		font-weight: bold;
+		font-family: Arial;
+		background-color:inherit;
+		border:2px solid black;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		color: black;
+	}
+	.d3 button{
+		width:155px;
+		font-weight: bold;
+		font-family: Arial;
+		background-color:inherit;
+		border:1px solid black;
+	}
+	.d3:hover{
+		
+		
+		 border-style: ridge;
+		  border-color: white;
+		  border-width: 7px;
+		  background-color:#f5fafa;
+		  color:black;
+	}
+	.d3 .i1:hover{
+		border-bottom:3px solid rebeccapurple;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-left: none;
+		border-right: none;
+		box-shadow: 0 0 15px 5px rgba(31, 73, 125, 0.8);
+		color: black;
+		font-weight: bold;
+		font-family: Arial;
+	}
+	.d3 .i2:hover{
+		border-bottom:3px solid rebeccapurple;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		color: black;
+		box-shadow: 0 0 15px 5px rgba(31, 73, 125, 0.8);
+		
+		
+	}
+	button:hover{
+		background-color: #faa46b;
+	}
+	a{	
+		text-decoration: none;
+		color: black;
+	}
+	form{
+		color: red;;
+	}
+	.a{
+		color: #676ceb;
+		text-decoration: underline;
+		font-weight: bold;
+		font-family: Arial;
+	}
+	.se{
+		width:40%;
+		text-align:center;
+		margin-top:25px;
+		border:none;
+		font-size:27px;
+		font-weight:bold;
+		font-family:arial;
+		background-color:inherit;
+	}
+</style>
+</head>
+<body>
+		<div class = "d1">
+			<h1>Electricity Billing Sysatem</h1>
+			<div class = "d2">
+				<div class = "d3">
+					<select name = "links" class = "se" size = "1" onchange = "window.location.href=this.value;">
+						<option  value="mainLogin.html">Admin Login</option>
+						<option value="CustomerLogin.html">Customer Login</option>
+					</select>
+					<form action = "adminlogin" method = "post">
+						<input class = "i1" style="color: black;" type = "text" name = "email" placeholder = "Enter Email"><br><br>
+						<input class = "i2" type = "text" name = "password" placeholder = "Enter Password" style = "width:300px"><br><br>
+						<button style = "border-right: none; border-top-left-radius: 4px;">Login</button><button  style = "border-left:none; border-top-right-radius: 4px;"><a href = "adminSignup.html">Signup</a></button>
+					</form>
+					<a href = "forget" class = "a">Forget</a>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
